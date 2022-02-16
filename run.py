@@ -40,6 +40,9 @@ def home():
 def css_selectors():
     return render_template("css-selectors.html", selectors=load_selectors())
 
+@app.route("/home")
+def home():
+    return render_template("home.html", selectors=load_selectors())
 
 # starts the webserver
 if __name__ == "__main__":
